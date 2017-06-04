@@ -67,7 +67,7 @@ class PinsController < ApplicationController
 
     
     def pin_params
-      params.require(:pin).permit(:description, :image)
+      params.require(:pin).permit(:description, :image, :name)
     end
 end 
 def correct_user
